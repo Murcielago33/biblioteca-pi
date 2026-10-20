@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca | Cadastro</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <input class="theme-toggle" type="checkbox" id="theme-toggle" aria-label="Alternar tema">
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">📖</span> Biblioteca</a>
+        <nav class="header-nav" aria-label="Navegação principal">
+          <a class="nav-login" href="login.html">Login</a>
+          <a class="button button-small" href="cadastro.html" aria-current="page">Cadastro</a>
+          <label class="theme-button" for="theme-toggle" title="Alternar tema" aria-label="Alternar tema"><span aria-hidden="true"></span></label>
+        </nav>
+      </div>
+    </header>
+
+    <main class="auth-main">
+      <section class="auth-panel signup-panel" aria-labelledby="auth-title">
+        <h1 id="auth-title">Criar Conta</h1>
+        <p class="auth-subtitle">Junte-se à nossa comunidade de leitores</p>
+        <form class="auth-form">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="✉  seu@email.com" autocomplete="email" required>
+          <label for="password">Senha</label>
+          <input id="password" name="password" type="password" placeholder="●●●●●●●●" autocomplete="new-password" required>
+          <label for="confirm-password">Confirmar Senha</label>
+          <input id="confirm-password" name="confirm-password" type="password" placeholder="●●●●●●●●" autocomplete="new-password" required>
+          <button class="button auth-submit signup-submit" type="button">Criar Conta</button>
+        </form>
+        <div class="form-divider"><span>Ou continue com</span></div>
+        <button class="social-button" type="button"><strong aria-hidden="true">G</strong> Google</button>
+        <p class="auth-switch">Já tem uma conta? <a href="login.html">Faça login</a></p>
+      </section>
+    </main>
+
+    <footer class="auth-footer">
+      <a href="index.html">← Voltar para a biblioteca</a>
+      <span>Feito por João, Julio e Kauã.</span>
+    </footer>
+  </div>
+</body>
+</html>
